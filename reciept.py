@@ -5,7 +5,7 @@ import difflib
 
 # Get information from the receipt
 pytesseract.pytesseract.tesseract_cmd = '/opt/homebrew/Cellar/tesseract/5.3.4_1/bin/tesseract'
-info = pytesseract.image_to_string(Image.open('test1.jpeg'))
+info = pytesseract.image_to_string(Image.open('test.png'))
 
 lines = info.strip().split('\n')
 dishes = []
